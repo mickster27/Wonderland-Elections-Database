@@ -1,11 +1,12 @@
 
-# CMSC461 Wonderland Elections Database Project
+# Wonderland Elections Database Project
 
-This project is a database application that the country Wonderland will use to manage their elections. The database will keep track of the Folks of Wonderland and their information, the Elections_Staff who work for the Elections Department, the various Places of Wonderland and their information, the Residences, the Voting_Centers, the Operating_Periods of the Voting_Centers, the shifts of the staff, the Voting_Registrations, all of the Ballots, and all of the Polls. The project also consists of a .ipynb to be run in Anaconda Jupyter Notebook to provide a user interface to the folks and elections staff of Wonderland. It will allow them to insert, modify, delete, and search for information from the database based on certain constraints.
+## Project Purpose
+This project is a database application that the fictional country Wonderland will use to manage their elections. The database will keep track of the Folks of Wonderland and their information, the Elections_Staff who work for the Elections Department, the various Places of Wonderland and their information, the Residences, the Voting_Centers, the Operating_Periods of the Voting_Centers, the shifts of the staff, the Voting_Registrations, all of the Ballots, and all of the Polls. The project also consists of a .ipynb to be run in Anaconda Jupyter Notebook to provide a user interface to the folks and elections staff of Wonderland. It will allow them to insert, modify, delete, and search for information from the database based on certain constraints.
 
 This repository contains the files:
 ------------------------------------
-* **report.pdf**: A written report explaining Phases B, C, and D of the project. It includes detailed information of my project development, including my E-R diagram, the relational schema, and explanation of how I created each phase and my thought process.
+* **report.pdf**: A written report detailing project development information, including the initial E-R diagram, the relational schema, and comprehensive explanations regarding design decisions. 
 * **dropAll.sql**: Drops all tables, triggers, indices, and functions in reverse order of creation.
 * **createAll.sql**: Creates the schema of the relational database. Includes tables, primary keys, foreign keys, various constraints, triggers, and indices.
 * **loadAll.sql**: Populates the database with sample data for each relation.
@@ -13,6 +14,13 @@ This repository contains the files:
 * **transaction.sql**: SQL Transaction to ensure ACID properties for Functional Requirement A.4, voter casting a ballot. Prevents double-voting and protects the integrity of all Ballots.
 * **Wonderland_Elections_Application.ipynb**: A Jupyter Notebook file that provides a user interface to run Parts A and B of the Functional Requirements. Includes instructions to setting up the configuration environment and connection to the database.
 * **README.md**: This document, which details the project and instructions for running the sql code.
+
+## Technologies Used
+--------------------
+* **MySQL**
+* **Python**
+* **Pandas Library**
+* **Jupyter Notebook**
 
 Prerequisites
 --------------
@@ -53,3 +61,15 @@ Notes
 * **Transaction:** Part A: Activity A.4 uses an isolation level of SERIALIZEABLE to prevent double-voting and ensure Ballot data integrity.
 * **Indices:** Indices have been made on the `Place` and `Voting_Registration` relations to optimize certain queries in Part B. Indices are featured in `createAll.sql`.
 * **Functions:** The function `display_closest_voting_center_from_folk()` is created in `queryAll.sql` in section B.9.
+
+## My Role and Contributions
+-----------------------------
+As the sole developer for this academic project, I was responsible for the entire database lifecycle. This included designing the Entity-Relationship (ER) diagram, drafting the relational schema, writing the SQL scripts to build and populate the database, and engineering the Python-based Jupyter Notebook interface. A detailed report is featured in the repository that explains each phase of the development of this database, including the creation of the E-R diagram, relational schema, and justification for each design decision.
+
+## Lessons Learned
+------------------
+This project provided comprehensive, practical experience in relational database design and management. A major challenge was ensuring ACID properties during complex operations, which I solved by implementing a SERIALIZABLE SQL transaction to prevent double-voting. Additionally, creating the database constraints and triggers reinforced the importance of automated data validation and maintaining strict referential integrity.
+
+## E-R Diagram
+<img width="966" height="710" alt="wonderland_er_diagram" src="https://github.com/user-attachments/assets/aa2877a1-6d62-47ef-ae78-50f5ab750ccf" />
+
