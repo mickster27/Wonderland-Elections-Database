@@ -3,7 +3,7 @@
 
 This project is a database application that the country Wonderland will use to manage their elections. The database will keep track of the Folks of Wonderland and their information, the Elections_Staff who work for the Elections Department, the various Places of Wonderland and their information, the Residences, the Voting_Centers, the Operating_Periods of the Voting_Centers, the shifts of the staff, the Voting_Registrations, all of the Ballots, and all of the Polls. The project also consists of a .ipynb to be run in Anaconda Jupyter Notebook to provide a user interface to the folks and elections staff of Wonderland. It will allow them to insert, modify, delete, and search for information from the database based on certain constraints.
 
-This submission contains the files:
+This repository contains the files:
 ------------------------------------
 * **report.pdf**: A written report explaining Phases B, C, and D of the project. It includes detailed information of my project development, including my E-R diagram, the relational schema, and explanation of how I created each phase and my thought process.
 * **dropAll.sql**: Drops all tables, triggers, indices, and functions in reverse order of creation.
