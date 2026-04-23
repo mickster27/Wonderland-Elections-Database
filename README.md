@@ -15,7 +15,7 @@ This repository contains the files:
 * **Wonderland_Elections_Application.ipynb**: A Jupyter Notebook file that provides a user interface to run Parts A and B of the Functional Requirements. Includes instructions to setting up the configuration environment and connection to the database.
 * **README.md**: This document, which details the project and instructions for running the sql code.
 
-## Technologies Used
+Technologies Used
 --------------------
 * **MySQL**
 * **Python**
@@ -62,11 +62,11 @@ Notes
 * **Indices:** Indices have been made on the `Place` and `Voting_Registration` relations to optimize certain queries in Part B. Indices are featured in `createAll.sql`.
 * **Functions:** The function `display_closest_voting_center_from_folk()` is created in `queryAll.sql` in section B.9.
 
-## My Role and Contributions
+My Role and Contributions
 -----------------------------
 As the sole developer for this academic project, I was responsible for the entire database lifecycle. This included designing the Entity-Relationship (ER) diagram, drafting the relational schema, writing the SQL scripts to build and populate the database, and engineering the Python-based Jupyter Notebook interface. A detailed report is featured in the repository that explains each phase of the development of this database, including the creation of the E-R diagram, relational schema, and justification for each design decision.
 
-## Lessons Learned
+Lessons Learned
 ------------------
 This project provided comprehensive, practical experience in relational database design and management. A major challenge was ensuring ACID properties during complex operations, which I solved by implementing a SERIALIZABLE SQL transaction to prevent double-voting. Additionally, creating the database constraints and triggers reinforced the importance of automated data validation and maintaining strict referential integrity.
 
