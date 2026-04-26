@@ -73,3 +73,5 @@ This project provided comprehensive, practical experience in relational database
 ## E-R Diagram
 <img width="966" height="710" alt="wonderland_er_diagram" src="https://github.com/user-attachments/assets/aa2877a1-6d62-47ef-ae78-50f5ab750ccf" />
 
+## Wonderland Elections API
+<img width="1877" height="865" alt="wonderland_api_image" src="https://github.com/user-attachments/assets/666dc666-fa5f-4f25-a867-1245db3133ed" />
